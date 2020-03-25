@@ -1,0 +1,144 @@
+/* NOTES:
+*
+*  1) CSS FILE SECTIONING - I have grouped the css code firstly in blocks of sections,
+*                           and secondly in order of appearance in HTML FILE
+*
+*  2) COLOUR - a) This CSS FILE contains the code necessary for a colourful website (a second
+*                 CSS FILE will be made in black and white for those with colour blindness)
+*              b) Sticking with the rgb() or rgba() format
+*/
+
+body{
+    background-color: rgb(255, 255, 247);
+    font-family: Puritan, Arial, Open-Sans, sans-serif;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+/*--------------------------------------------------------------------------------- Header Section */
+
+header{
+    background-image: url(../images/header_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 159px;
+}
+
+#logo{
+    height: 50px;
+    width: 200px;
+    margin: 20px;
+}
+
+
+/*--------------------------------------------------------------------------------- Navigation Section */
+nav{
+    float: right;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 23px 20px 0px 20px;
+    border-left: rgb(0, 0, 0) solid 5px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+}
+
+nav ul li:hover{
+    background-color: rgb(146, 209, 130);
+    color: white;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.unselected{
+    color: black;
+}
+
+.selected{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.selected:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+/*--------------------------------------------------------------------------------- Main Section */
+
+main{
+    clear: both;
+    min-height: 650px;
+    padding: 30px;
+}
+
+main section{
+    margin-top: 70px;
+}
+
+/* .first  is for anything displayed on the left of the screen */
+.first{
+    float: left;
+    width: 50%;  
+}
+
+/* This is on index.html for the xylophone image */
+#xylo{ 
+    float: right;
+    border: solid rgb(100, 150, 250) 10px;
+    border-radius: 40px;
+    margin-top: 70px;
+    width: 100%;
+    max-width: 640px;
+    min-width: 400px;
+}
+
+
+/* .second is for any content to be displayed on the right of the screen */
+.second{
+    float: right;
+    width: 45%;
+}
+
+/* This is on index.html for the welcome paragraph */
+#welcome{
+    float: left;
+}
+
+.second h1{
+    font-size: 40px;
+    text-decoration: underline;
+    margin: 10px;
+}
+
+.second p{
+    border: solid rgb(245, 76, 76) 20px;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 10px;
+}
+
+/*--------------------------------------------------------------------------------- Footer Section */
+
+footer{
+    min-height: 100px;
+    background-color: black;
+    clear: both;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+footer p{
+    font-size: 16px;
+}
