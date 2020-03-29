@@ -8,10 +8,20 @@
 *              b) Sticking with the rgb() or rgba() format
 */
 
+
+
+/* This is just to ensure all elements across all web-browsers are
+   starting without any extra space */
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
 body{
     background-color: rgb(255, 255, 247);
     font-family: Puritan, Arial, Open-Sans, sans-serif;
-    font-size: 20px;
+    font-size: 1.5em;
     margin: 0px;
     padding: 0px;
     border: 0px;
@@ -23,7 +33,7 @@ header{
     background-image: url(../images/header_background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 159px;
+    min-height: 165px;
 }
 
 #logo{
@@ -44,7 +54,7 @@ nav ul{
 
 nav ul li{
     display: inline-block;
-    padding: 23px 20px 0px 20px;
+    padding: 23px 20px 5px 20px;
     border-left: rgb(0, 0, 0) solid 5px;
     height: 40px;
     background-color: rgb(255, 255, 255);
@@ -79,11 +89,14 @@ nav ul li a{
 main{
     clear: both;
     min-height: 650px;
-    padding: 30px;
 }
 
-main section{
-    margin-top: 70px;
+.topic{
+    background-image: url(../images/music_letters.jpg);
+}
+
+.block{
+    margin-top: 100px;
 }
 
 /* .first  is for anything displayed on the left of the screen */
@@ -93,7 +106,7 @@ main section{
 }
 
 /* This is on index.html for the xylophone image */
-#xylo{ 
+.first img{ 
     float: right;
     border: solid rgb(100, 150, 250) 10px;
     border-radius: 40px;
@@ -110,13 +123,13 @@ main section{
     width: 45%;
 }
 
-/* This is on index.html for the welcome paragraph */
-#welcome{
+.second aside{
     float: left;
+    max-width: 640px;
 }
 
 .second h1{
-    font-size: 40px;
+    font-size: 2em;
     text-decoration: underline;
     margin: 10px;
 }
