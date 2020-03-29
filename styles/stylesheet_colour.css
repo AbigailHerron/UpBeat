@@ -1,7 +1,8 @@
 /* NOTES:
 *
 *  1) CSS FILE SECTIONING - I have grouped the css code firstly in blocks of sections,
-*                           and secondly in order of appearance in HTML FILE
+*                           and secondly by classes in HTML FILE and their associated
+*                           elements in the order they appear
 *
 *  2) COLOUR - a) This CSS FILE contains the code necessary for a colourful website (a second
 *                 CSS FILE will be made in black and white for those with colour blindness)
@@ -9,18 +10,18 @@
 */
 
 
-
-/* This is just to ensure all elements across all web-browsers are
-   starting without any extra space */
+/* Ensuring consistency between different web-browsers by
+   eliminating any inherited white space*/
 *{
     margin: 0px;
     padding: 0px;
     border: 0px;
 }
 
+
 body{
     background-color: rgb(255, 255, 247);
-    font-family: Puritan, Arial, Open-Sans, sans-serif;
+    font-family: "Comic Sans MS", Puritan, Arial, Open-Sans, sans-serif;
     font-size: 1.5em;
     margin: 0px;
     padding: 0px;
@@ -33,7 +34,7 @@ header{
     background-image: url(../images/header_background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 165px;
+    min-height: 157px;
 }
 
 #logo{
@@ -54,9 +55,11 @@ nav ul{
 
 nav ul li{
     display: inline-block;
-    padding: 23px 20px 5px 20px;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
     border-left: rgb(0, 0, 0) solid 5px;
-    height: 40px;
     background-color: rgb(255, 255, 255);
     margin: 0px;
 }
@@ -91,12 +94,44 @@ main{
     min-height: 650px;
 }
 
-.topic{
-    background-image: url(../images/music_letters.jpg);
+h1{
+    font-size: 2em;
+    text-decoration: underline;
+    margin: 10px;
 }
 
+.topic{
+    padding-top: 100px;
+    text-align: center;
+    min-width: 500px;
+    clear: both;
+}
+
+
+.topic img{
+    margin-top: 20px;
+    width: 80%;
+    min-width: 500px;
+    max-width: 1000px;
+}
+
+.topic p{
+    text-align: center;
+    display: inline-block;
+    width: 80%;
+    max-width: 1000px;
+    border-radius: 20px;
+    margin-top: 25px;
+    padding: 20px;
+    border: solid rgb(163, 118, 85) 10px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+
 .block{
-    margin-top: 100px;
+    padding-top: 100px;
+    clear: both;
 }
 
 /* .first  is for anything displayed on the left of the screen */
@@ -108,12 +143,24 @@ main{
 /* This is on index.html for the xylophone image */
 .first img{ 
     float: right;
+    margin-top: 50px;
     border: solid rgb(100, 150, 250) 10px;
     border-radius: 40px;
-    margin-top: 70px;
-    width: 100%;
+    width: 80%;
     max-width: 640px;
     min-width: 400px;
+}
+
+.first aside{
+    float: right;
+    max-width: 640px;
+}
+
+.first p{
+    border: solid rgb(120, 242, 90) 20px;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 10px;
 }
 
 
@@ -128,12 +175,6 @@ main{
     max-width: 640px;
 }
 
-.second h1{
-    font-size: 2em;
-    text-decoration: underline;
-    margin: 10px;
-}
-
 .second p{
     border: solid rgb(245, 76, 76) 20px;
     border-left: 0px;
@@ -141,9 +182,23 @@ main{
     padding: 10px;
 }
 
+.second img{ 
+    float: left;
+    margin-top: 50px;
+    border: solid rgb(218, 99, 242) 10px;
+    border-radius: 40px;
+    width: 80%;
+    max-width: 640px;
+    min-width: 400px;
+}
+
+.video{
+    margin-top: 20px;
+}
 /*--------------------------------------------------------------------------------- Footer Section */
 
 footer{
+    font-family: Puritan, Arial, Open-Sans, sans-serif;
     min-height: 100px;
     background-color: black;
     clear: both;
