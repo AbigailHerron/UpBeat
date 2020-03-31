@@ -189,13 +189,12 @@ h1{
     clear: both;
 }
 
-/* .first  is for anything displayed on the left of the screen */
-.first{
+/* .first and .third  is for anything displayed on the left of the screen */
+.first, .third{
     float: left;
     width: 50%;  
 }
 
-/* This is on index.html for the xylophone image */
 .first img{ 
     float: right;
     margin-top: 50px;
@@ -206,7 +205,17 @@ h1{
     min-width: 400px;
 }
 
-.first aside{
+.third img{
+    float: right;
+    margin-top: 50px;
+    border: dashed rgb(255, 191, 94) 10px;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 400px;
+    min-width: 200px;
+}
+
+.first aside, .third aside{
     float: right;
     max-width: 640px;
 }
@@ -218,20 +227,34 @@ h1{
     padding: 10px;
 }
 
+.third p{
+    border: dashed rgb(69, 56, 255) 20px;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 10px;
+}
 
-/* .second is for any content to be displayed on the right of the screen */
-.second{
+
+/* .second and .fourth is for any content to be displayed on the right of the screen */
+.second, .fourth{
     float: right;
     width: 45%;
 }
 
-.second aside{
+.second aside, .fourth aside{
     float: left;
     max-width: 640px;
 }
 
 .second p{
     border: solid rgb(245, 76, 76) 20px;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 10px;
+}
+
+.fourth p{
+    border: dashed rgb(255, 153, 194) 20px;
     border-left: 0px;
     border-right: 0px;
     padding: 10px;
@@ -246,6 +269,17 @@ h1{
     max-width: 640px;
     min-width: 400px;
 }
+
+.fourth img{
+    float: left;
+    margin-top: 50px;
+    border: dashed rgb(35, 234, 252) 10px;
+    border-radius: 40px;
+    width: 80%;
+    max-width: 500px;
+    min-width: 200px;
+}
+
 
 .video{
     margin-top: 20px;
