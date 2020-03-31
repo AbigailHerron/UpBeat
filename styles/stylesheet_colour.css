@@ -94,6 +94,61 @@ main{
     min-height: 650px;
 }
 
+/*--- below: sticky navigation block --*/
+#sticky{
+    width: 100%;
+    min-height: 60px;
+    background-color: rgb(146, 209, 130);
+    border: solid rgb(116, 196, 96) 2px;
+    border-radius: 5px;
+    position: sticky;
+    top: 0;
+    clear: both;
+}
+
+.first ul, .second ul{
+    list-style-type: none;
+    color: rgb(0, 0, 0);
+}
+
+.first ul a, .second ul a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.first li, .second li{
+    display: inline-block;
+}
+
+.first li{
+    float: left;
+}
+
+.second li{
+    float: right;
+}
+
+.button{
+    min-width: 100px;
+    background-color: rgb(184, 184, 184);
+    border: solid rgb(77, 77, 77) 2px;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+.button:hover{
+    background-color: rgb(145, 145, 145);
+    color: rgb(255, 255, 255);
+}
+
+.button:active{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+/*--- above: sticky navigation block --*/
+
 h1{
     font-size: 2em;
     text-decoration: underline;
