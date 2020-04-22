@@ -35,6 +35,7 @@
                     <a class="unselected" href="notes.html"><li>Notes</li></a>
                     <a class="unselected" href="rhythm.html"><li>Rhythm</li></a>
                     <a class="selected" href="quiz.html"><li class="selected">Quiz</li></a>
+                    <a class="unselected" href="contact.html"><li>Contact</li></a>
                 </ul>
             </nav>
         </section>
@@ -43,14 +44,198 @@
 <!-- end of banner section (header and navigation) -->
     
     <main>
-        <section class="first">
         
+        <!-- Quiz Introduction Section -->
+        <section class="topic">
+            <h1>Test Yourself!</h1>
+            <img src="images/grade.jpg" alt="Unknown Notes and A+ Grade" >
+            <p>Phew!  That was a lot of learning.  Ready to see how much you remember?<br><br>Let's take a Quiz!</p>
         </section>
-        <section class="second">
-            <aside>
+        
+        <!-- Quiz Form Section, used https://css-tricks.com/building-a-simple-quiz/ as reference -->
+        <section id=form>
+            <form action="forms/quiz.php" method="post" id="quiz">
+                <ul>
+                    
+                    <!-- Question 1  -  Answer A -->
+                    <li>
+                        <h3>What kind of note has one whole beat?</h3>
+                        <section>
+                            <input type="radio" name="question_1_answers" id="question_1_answers_A" value="A" />
+                            <lable for="question_1_answers_A">A) A Crotchet</lable>
+                        </section>
+                        <section>
+                            <input type="radio" name="question_1_answers" id="question_1_answers_B" value="B" />
+                            <label for="question_1_answers_B">B) A Minim</label>
+                        </section>
+                        <section>
+                            <input type="radio" name="question_1_answers" id="question_1_answers_C" value="C" />
+                            <label for="question_1_answers_C">C) A Semi-Breath</label>
+                        </section>
+                    </li>
+                    
+                    <!-- Question 2  -  Answer C-->
+                    <li>
+                        <h3>What is the 'G Clef' also known as?</h3>
+                        <section>
+                            <input type="radio" name="question_2_answers" id="question_2_answers_A" value="A" />
+                            <lable for="question_2_answers_A">A) The Trouble Clef</lable>
+                        </section>
+                        <section>
+                            <input type="radio" name="question_2_answers" id="question_2_answers_B" value="B" />
+                            <label for="question_2_answers_B">B) The Tripple Clef</label>
+                        </section>
+                        <section>
+                            <input type="radio" name="question_2_answers" id="question_2_answers_C" value="C" />
+                            <label for="question_2_answers_C">C) The Treble Clef</label>
+                        </section>
+                    </li>
+                    
+                    <!-- Question 3  -  Answer C-->
+                    <li>
+                        <h3>How many beats are in a bar when the 'Time Signature' is 2/4?</h3>
+                        <section>
+                            <input type="radio" name="question_3_answers" id="question_3_answers_A" value="A" />
+                            <lable for="question_3_answers_A">A) Four Beats</lable>
+                        </section>
+                        <section>
+                            <input type="radio" name="question_3_answers" id="question_3_answers_B" value="B" />
+                            <label for="question_3_answers_B">B) Six Beats</label>
+                        </section>
+                        <section>
+                            <input type="radio" name="question_3_answers" id="question_3_answers_C" value="C" />
+                            <label for="question_3_answers_C">C) Two Beats</label>
+                        </section>
+                    </li>
+                    
+                    <!-- Question 4  -  Answer B -->
+                    <li>
+                        <h3>When using the 'G Clef', what note is on the 3rd (middle) line?</h3>
+                        <section>
+                            <input type="radio" name="question_4_answers" id="question_4_answers_A" value="A" />
+                            <lable for="question_4_answers_A">A) C</lable>
+                        </section>
+                        <section>
+                            <input type="radio" name="question_4_answers" id="question_4_answers_B" value="B" />
+                            <label for="question_4_answers_B">B) B</label>
+                        </section>
+                        <section>
+                            <input type="radio" name="question_4_answers" id="question_4_answers_C" value="C" />
+                            <label for="question_4_answers_C">C) F</label>
+                        </section>
+                    </li>
+                    
+                    <!-- Question 5  -  Answer A -->
+                    <li>
+                        <h3>How long does a 'Semi-Breath' last?</h3>
+                        <section>
+                            <input type="radio" name="question_5_answers" id="question_5_answers_A" value="A" />
+                            <lable for="question_5_answers_A">A) Four Beats</lable>
+                        </section>
+                        <section>
+                            <input type="radio" name="question_5_answers" id="question_5_answers_B" value="B" />
+                            <label for="question_5_answers_B">B) Three Beats</label>
+                        </section>
+                        <section>
+                            <input type="radio" name="question_5_answers" id="question_5_answers_C" value="C" />
+                            <label for="question_5_answers_C">C) Two Beats</label>
+                        </section>
+                    </li>
+                    
+                    <!-- Question 6  -  Answer B -->
+                    <li>
+                        <h3>How many notes are in a 'Chord'?</h3>
+                        <section>
+                            <input type="radio" name="question_6_answers" id="question_6_answers_A" value="A" />
+                            <lable for="question_6_answers_A">A) Two</lable>
+                        </section>
+                        <section>
+                            <input type="radio" name="question_6_answers" id="question_6_answers_B" value="B" />
+                            <label for="question_6_answers_B">B) Three</label>
+                        </section>
+                        <section>
+                            <input type="radio" name="question_6_answers" id="question_6_answers_C" value="C" />
+                            <label for="question_6_answers_C">C) Seven</label>
+                        </section>
+                    </li>
+                    
+                    <!-- Question 7  -  Answer C -->
+                    <li>
+                        <h3>Which of these is <u>not</u> a note?</h3>
+                        <section>
+                            <input type="radio" name="question_7_answers" id="question_7_answers_A" value="A" />
+                            <lable for="question_7_answers_A">A) G</lable>
+                        </section>
+                        <section>
+                            <input type="radio" name="question_7_answers" id="question_7_answers_B" value="B" />
+                            <label for="question_7_answers_B">B) E</label>
+                        </section>
+                        <section>
+                            <input type="radio" name="question_7_answers" id="question_7_answers_C" value="C" />
+                            <label for="question_7_answers_C">C) H</label>
+                        </section>
+                    </li>
+                    
+                    <!-- Question 8  -  Answer A -->
+                    <li>
+                        <h3>How far apart are the notes in a 'Simple Chord'?</h3>
+                        <section>
+                            <input type="radio" name="question_8_answers" id="question_8_answers_A" value="A" />
+                            <lable for="question_8_answers_A">A) One Note Appart</lable>
+                        </section>
+                        <section>
+                            <input type="radio" name="question_8_answers" id="question_8_answers_B" value="B" />
+                            <label for="question_8_answers_B">B) Two Notes Appart</label>
+                        </section>
+                        <section>
+                            <input type="radio" name="question_8_answers" id="question_8_answers_C" value="C" />
+                            <label for="question_8_answers_C">C) Three Notes Appart</label>
+                        </section>
+                    </li>
+                    
+                    <!-- Question 9  -  Answer B-->
+                    <li>
+                        <h3>How do you play a 'Chord'?</h3>
+                        <section>
+                            <input type="radio" name="question_9_answers" id="question_9_answers_A" value="A" />
+                            <lable for="question_9_answers_A">A) Play the lowest note first, then the middle, then the top</lable>
+                        </section>
+                        <section>
+                            <input type="radio" name="question_9_answers" id="question_9_answers_B" value="B" />
+                            <label for="question_9_answers_B">B) Play them all at the same time</label>
+                        </section>
+                        <section>
+                            <input type="radio" name="question_9_answers" id="question_9_answers_C" value="C" />
+                            <label for="question_9_answers_C">C) Play randomly and try not to break your fingers</label>
+                        </section>
+                    </li>
+                    
+                    <!-- Question 10  -  Answer B -->
+                    <li>
+                        <h3>How many beats does a 'Minim' have?</h3>
+                        <section>
+                            <input type="radio" name="question_10_answers" id="question_10_answers_A" value="A" />
+                            <lable for="question_10_answers_A">A) Three Beats</lable>
+                        </section>
+                        <section>
+                            <input type="radio" name="question_10_answers" id="question_10_answers_B" value="B" />
+                            <label for="question_1_answers_B">B) Two Beats</label>
+                        </section>
+                        <section>
+                            <input type="radio" name="question_10_answers" id="question_10_answers_C" value="C" />
+                            <label for="question_10_answers_C">C) Four Beats</label>
+                        </section>
+                    </li>
+                    
+                </ul>
                 
-            </aside>
+                <section>
+                    <input type="submit" value="Submit" class="button"/>
+                    <input type="reset" value="Reset" class="button"/>
+                </section>
+            </form>
         </section>
+        
     </main>
     
 <!--   end of main section and related content   -->
