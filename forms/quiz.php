@@ -5,11 +5,11 @@
     $answer3 = $_POST['question_3_answers'];
     $answer4 = $_POST['question_4_answers'];
     $answer5 = $_POST['question_5_answers'];
-    $answer5 = $_POST['question_6_answers'];
-    $answer5 = $_POST['question_7_answers'];
-    $answer5 = $_POST['question_8_answers'];
-    $answer5 = $_POST['question_9_answers'];
-    $answer5 = $_POST['question_10_answers'];
+    $answer6 = $_POST['question_6_answers'];
+    $answer7 = $_POST['question_7_answers'];
+    $answer8 = $_POST['question_8_answers'];
+    $answer9 = $_POST['question_9_answers'];
+    $answer10 = $_POST['question_10_answers'];
 
     $totalCorrect = 0;
 
