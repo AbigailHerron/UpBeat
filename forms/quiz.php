@@ -24,6 +24,6 @@
     if ($answer9 == "B") { $totalCorrect++; }
     if ($answer10 == "B") { $totalCorrect++; }
 
-    <?php echo $totalCorrect / 10 correct</section>; ?>
+     echo "<div id='results'>$totalCorrect / 5 correct</div>";
 
 ?>
