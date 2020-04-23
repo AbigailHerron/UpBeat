@@ -1,0 +1,105 @@
+<!--  NOTES:
+*   
+*   1) PAGE DESCRIPTION:  This is the contact section of the website
+*                         It shows a Google Map of IT Sligo and has a Contact Form for User Questions
+*
+*
+------------------------------------------------------------------------------------------------------------>
+
+
+<!------------------------------------------------------------------------------------- START OF DOCUMENT -->
+
+<!DOCTYPE html>
+<html lang="en">
+<!------------------------------------------------------------------------------------------ HEAD SECTION -->
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Questions,Map,Contact">
+    <link type="text/css" rel="stylesheet" href="styles/stylesheet_colour.css">
+    <link rel="icon" type="images/png" href="images/favicon-16x16.png" sizes="16x16"/>
+    <title>Up Beat!</title>
+</head>
+<!------------------------------------------------------------------------------------------ BODY SECTION -->
+<body>
+    <header>
+        <img src="images/logo.png" id="logo" alt="Up Beat Logo"/>
+        <section>
+            <nav>
+                <ul>
+                    <a class="unselected" href="index.html"><li>Home</li></a>
+                    <a class="unselected" href="notes.html"><li>Notes</li></a>
+                    <a class="unselected" href="rhythm.html"><li>Rhythm</li></a>
+                    <a class="selected" href="contact.html"><li class="selected">Contact</li></a>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    
+<!-- end of banner section (header and navigation) -->
+    
+    <main>
+        <section class="topic">
+            <h1>Send Us Your Questions!</h1>
+            <img src="images/envelopes.jpg" alt="A lot of hand-drawn envelopes" >
+            <p>Want to know more?  Where do you go from here?<br><br>Send us your questions through this short form and we'll get back to you!<br><br><span class="disclaimer">Note: This form does not work as this is only a student assignment completed for IT Sligo.  Thank you for your understanding and patience.  We hope you enjoyed the content regardless.</span></p>
+        </section>
+        
+        <!-- Start of Form -->
+        <section class="block">
+            <p class="disclaimer">Note: Fields marked with <span class="required">*</span> are manditory</p>
+            <section class="first">
+                <aside>
+                    <form action="http://year1.ccpdev.me/FormTest.php" method="post">
+                            <lable for="first_name">First Name:<span class="required">*</span></lable>
+                            <input type="text" id="first_name" name="first_name" placeholder="Barry"><br>
+                            <lable for="last_name">Last Name:<span class="required">*</span></lable>
+                            <input type="text" id="last_name" name="last_name" placeholder="White"><br>
+
+                            <lable for="email">Email:<span class="required">*</span></lable>
+                            <input type="email" id="email" name="email" required placeholder="myusername@example.com"><br>
+
+                            <label for="gender">Gender :</label>
+                            <input type="radio" id="gender" name="gender" value="male"> Male
+                            <input type="radio" name="gender" value="female"> Female
+                            <input type="radio" name="gender" value="other"> Other<br>
+
+                            <label for="internet">Heard of us:</label>
+                            <fieldset>
+                                <input type="checkbox" id="internet" name="internet" value="internet" checked> Random Search<br>
+                                <input type="checkbox" class="marginl" name="paper" value="paper"> Newspaper Article<br>
+                                <input type="checkbox" class="marginl" name="friend" value="friend"> Devious Friend<br>
+                                <input type="checkbox" class="marginl" name="Add" value="Add"> Some Other Twist of Fate<br>
+                            </fieldset><br>
+
+                            <lable for="message">Query :</lable>
+                            <textarea cols="40" rows="6" id="message" name="message" placeholder="Please keep your message short.  Thank you!" data-maxlength="200"></textarea><br>
+
+                            <input type="submit" name="submit" class="button form" value="Submit">
+                            <input type="reset" name="reset" class="button form" value="Reset">
+                        </form>
+                    </aside>
+                </section>
+            </section>
+            
+            <!-- Google Map -->
+            <section class="second">
+                <h3>Our Base of Operations!</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2329.434656780722!2d-8.462274883993825!3d54.278578112174515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485ee84ef3fb4b37%3A0xc76b5b21d985fb79!2sInstitute%20of%20Technology%20Sligo!5e0!3m2!1sen!2sie!4v1587596980068!5m2!1sen!2sie" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </section>
+        
+        <!-- Last block to add space -->
+        <section class="block">
+        </section>
+    </main>
+    
+<!--   end of main section and related content   -->
+    
+    <footer>
+            <p>This website was created as a student assessment for IT Sligo</p>
+    </footer> 
+    
+<!--   end of footer section and sitemap detais  -->
+    
+</body>
+</html>
+<!--------------------------------------------------------------------------------------- END OF DOCUMENT -->
