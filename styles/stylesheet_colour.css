@@ -91,7 +91,7 @@ nav ul li a{
 
 main{
     clear: both;
-    min-height: 650px;
+    min-height: 710px;
 }
 
 /*--- below: sticky navigation block --*/
@@ -171,7 +171,6 @@ h1{
 }
 
 .topic p{
-    text-align: center;
     display: inline-block;
     width: 80%;
     max-width: 1000px;
@@ -282,8 +281,45 @@ h1{
 
 
 .video{
-    margin-top: 20px;
+    margin-top: 60px;
+    min-width: 500px;
 }
+
+.disclaimer{
+    font-size: 0.6em;
+    font-style: italic;
+}
+
+/*--- below: contact us form --*/
+lable{
+    width: 112px;
+    padding-right: 10px;
+    text-align: right;
+}
+
+
+input{
+    margin-left: 1em;
+    margin-bottom: .5em;
+    width: 220px;    
+}
+
+input[type="text"], input[type="email"], textarea{
+    font-size: 0.7em;
+}
+
+input[type="radio"]{
+    width: 10px;
+}
+
+input[type="checkbox"]{
+    width: 20px;
+}
+
+.required{
+    color: rgb(200, 0, 0);
+}
+/*--- above: contact us form --*/
 /*--------------------------------------------------------------------------------- Footer Section */
 
 footer{
