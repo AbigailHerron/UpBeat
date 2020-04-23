@@ -9,14 +9,14 @@
 *                       b) There are anchor links to help the viewer to keep track of which part of the
 *                          lesson they want to view
 *
------------------------------------------------------------------------------------------------------------->
+========================================================================================================= -->
 
 
-<!------------------------------------------------------------------------------------- START OF DOCUMENT -->
+<!-- ================================================================================== START OF DOCUMENT -->
 
 <!DOCTYPE html>
 <html lang="en">
-<!------------------------------------------------------------------------------------------ HEAD SECTION -->
+<!-- ======================================================================================= HEAD SECTION -->
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="Notes,Letters,Clef,Chord,Scale">
@@ -24,18 +24,18 @@
     <link rel="icon" type="images/png" href="images/favicon-16x16.png" sizes="16x16"/>
     <title>Up Beat!</title>
 </head>
-<!------------------------------------------------------------------------------------------ BODY SECTION -->
+<!-- ======================================================================================= BODY SECTION -->
 <body>
-    <a name="top"></a>
+    <a id="top"></a>
     <header>
         <img src="images/logo.png" id="logo" alt="Up Beat Logo"/>
         <section>
             <nav>
                 <ul>
-                    <a class="unselected" href="index.html"><li>Home</li></a>
-                    <a class="selected" href="notes.html"><li class="selected">Notes</li></a>
-                    <a class="unselected" href="rhythm.html"><li>Rhythm</li></a>
-                    <a class="unselected" href="contact.html"><li>Contact</li></a>
+                    <li class="selected"><a class="selected" href="index.html">Home</a></li>
+                    <li><a href="notes.html">Notes</a></li>
+                    <li><a href="rhythm.html">Rhythm</a></li>
+                    <li><a  href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </section>
@@ -48,20 +48,20 @@
         <section id="sticky">
             <section class="first">
                 <ul>
-                    <a href="#lesson1"><li class="button">Lesson 1</li></a>
-                    <a href="#lesson2"><li class="button">Lesson 2</li></a>
+                    <li class="button"><a href="#lesson1">Lesson 1</a></li>
+                    <li class="button"><a href="#lesson2">Lesson 2</a></li>
                 </ul>
             </section>
             <section class="second">
                 <ul>
-                    <a href="#top"><li class="button">Back to Top</li></a>
-                    <a href="documents/blank_lines.pdf" download><li class="button">Blank Sheet</li></a>
+                    <li class="button"><a href="#top">Back to Top</a></li>
+                    <li class="button"><a href="documents/blank_lines.pdf" download>Blank Sheet</a></li>
                 </ul>
             </section>
         </section>
         
         <!-- Letters and Placement: LESSON 1 -->
-        <a name="lesson1"></a>
+        <a id="lesson1"></a>
         <section class="topic">
             <h1>The Seven Letters</h1>
             <img src="images/music_letters.jpg" alt="A B C D E F G" >
@@ -103,7 +103,7 @@
         
         <!-- Scales and Chords: LESSON 2 -->
         <section class="block"> <!-- put the anchor in a block to make sure the sticky navitagion doesn't cover the lesson title  -->
-            <a name="lesson2"></a>
+            <a id="lesson2"></a>
         </section>
         
         <section class="topic">
@@ -153,11 +153,32 @@
 <!--   end of main section and related content   -->
     
     <footer>
-            <p>This website was created as a student assessment for IT Sligo</p>
-    </footer> 
+        
+        <!-- start of sitemap -->
+        <section class="row">
+            <section class="column first_col">
+                <h5>Note Lessons</h5>
+                <a href="notes.html#lesson1"><p>The Seven Letters</p></a>
+                <a href="notes.html#lesson2"><p>Scales and Chords</p></a>
+            </section>
+            <section class="column">
+                <h5>Rhythm Lessons</h5>
+                <a href="rhythm.html#lesson3"><p>Note Durations</p></a>
+                <a href="rhythm.html#lesson4"><p>Time Signatures</p></a>
+            </section>
+            <section class="column">
+                <h5>More</h5>
+                <a href="https://www.flowkey.com/en"><p>Learn to Play Piano</p></a>
+                <a href="https://www.musicnotes.com"><p>Get Sheet Music</p></a>
+            </section>
+        </section>
+        
+        <p class="disclaimer">&copy; UpBeat 2020</p>
+        <p class="disclaimer">This website was created as a student assessment for IT Sligo</p>
+    </footer>  
     
 <!--   end of footer section and sitemap detais  -->
     
 </body>
 </html>
-<!--------------------------------------------------------------------------------------- END OF DOCUMENT -->
+<!-- ==================================================================================== END OF DOCUMENT -->
